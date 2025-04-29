@@ -19,8 +19,5 @@ module.exports = {
         "log:add", // 自定义类型（建议格式）
       ],
     ],
-    "subject-empty": [2, "never"],
-    "header-max-length": [2, "always", 72],
-    "scope-case": [2, "always", "lowerCase"],
   },
 };
