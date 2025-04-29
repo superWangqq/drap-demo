@@ -9,9 +9,7 @@ const a = `a${index}`;
 console.log(a);
 const condition = true;
 
-const result1 = condition
-  ? "asdasdasdasdasdadsaasdasdasd1asdasdasdasdadsaasdasdasdasdasdadsa"
-  : ",c,n";
+const result1 = condition ? "asdasdasdasdasdadsaasddasdadsaasdasdasdasdasdadsa" : ",c,n";
 console.log(result1);
 
 user.a;
