@@ -8,5 +8,5 @@
   "bracketSpacing": true,
   "arrowParens": "always",
   "endOfLine": "auto",
-  "experimentalTernaries": true
+  "experimentalTernaries": false
 }
