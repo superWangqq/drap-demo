@@ -1,0 +1,22 @@
+{
+    "root": true,
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "parser": "vue-eslint-parser", // 必须指定 Vue 解析器
+    "plugins": ["vue", "prettier"],
+    "extends": [
+        "eslint:recommended",
+        "plugin:vue/vue3-recommended", // Vue 3 推荐规则
+        "plugin:prettier/recommended" // Prettier 规则，需放在最后
+    ],
+    "rules": {
+        "quotes": ["error", "double"], // 强制双引号
+        "prettier/prettier": "error",
+        "no-empty": "warn",
+        "eqeqeq": ["error", "always"],
+        "no-unused-vars": "error" // 确保未被设为 "off" 或其他禁用值
+    }
+}
