@@ -9,8 +9,8 @@ const a = `a${index}`;
 console.log(a);
 const condition = true;
 
-const result1 = condition ? "asdasdasdasdasdadsaasddasdadsaasdasdasdasdasdadsa" : ",c,n";
-console.log(result1);
+const result = condition ? "asdasdasdasdasdadsaasddasdadsaasdasdasdasdasdadsa" : ",c,n";
+console.log(result);
 
 user.a;
 // const a = 0;
