@@ -1,0 +1,15 @@
+# 忽略 node_modules 目录
+/node_modules/
+
+# 忽略 dist 输出目录
+/dist/
+
+# 忽略所有 .log 文件
+*.log
+
+# 忽略 public 目录下的所有 SVG 文件
+public/**/*.svg
+
+# 忽略特定文件
+README.md
+.env

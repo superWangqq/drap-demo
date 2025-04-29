@@ -8,9 +8,11 @@ localStorage.setItem("aa", "1");
 const a = `a${index}`;
 console.log(a);
 const condition = true;
+
 const result = condition ? "asdasdasdasdasdadsaasdasdasdasdasdadsaasdasdasdasdasdadsa" : ",c,n";
 console.log(result);
 
 user.a;
+// const a = 0;
 
 createApp(App).mount("#app");
