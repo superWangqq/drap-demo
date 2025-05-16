@@ -1,4 +1,4 @@
-# vue-eslint
+# shi
 
 ## Project setup
 

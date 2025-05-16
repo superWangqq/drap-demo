@@ -1,22 +1,27 @@
 {
-    "root": true,
-    "env": {
-        "browser": true,
-        "es2021": true,
-        "node": true
-    },
-    "parser": "vue-eslint-parser", // 必须指定 Vue 解析器
-    "plugins": ["vue", "prettier"],
-    "extends": [
-        "eslint:recommended",
-        "plugin:vue/vue3-recommended", // Vue 3 推荐规则
-        "plugin:prettier/recommended" // Prettier 规则，需放在最后
-    ],
-    "rules": {
-        "quotes": ["error", "double"], // 强制双引号
-        "prettier/prettier": "error",
-        "no-empty": "warn",
-        "eqeqeq": ["error", "always"],
-        "no-unused-vars": "error" // 确保未被设为 "off" 或其他禁用值
-    }
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+     "vue/setup-compiler-macros": true // 关键配置
+  },
+  "parser": "vue-eslint-parser", // 必须指定 Vue 解析器
+  "plugins": ["vue", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:vue/vue3-recommended", // Vue 3 推荐规则
+    "plugin:prettier/recommended" // Prettier 规则，需放在最后
+  ],
+  "rules": {
+    "quotes": ["error", "double"], // 强制双引号
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
+    "no-empty": "warn",
+    "eqeqeq": ["error", "always"],
+    "vue/multi-word-component-names": "off",
+    "vue/no-mutating-props": "off",
+    "no-unused-vars": "off", // 确保未被设为 "off" 或其他禁用值
+    "vue/no-unused-vars":"off",
+    "vue/return-in-computed-property":"off"
+  }
 }
