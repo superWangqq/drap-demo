@@ -3,10 +3,23 @@ import { sin, cos } from "./translate";
 // import { deepCopy } from "@/utils/utils";
 
 export const isIncludesColor = (str) => {
+  if (!str) return;
   return str.toLowerCase().includes("color");
 };
-const unUnit = ["borderColor", "opacity", "borderStyle", "fontWeight", "textAlign", "verticalAlign"];
-let boxStyleProps = ["borderColor", "borderRadius", "borderWidth", "height", "left", "opacity", "rotate", "top", "width", "borderStyle"];
+const unUnit = ["borderColor", "opacity", "borderStyle", "fontWeight", "textAlign", "verticalAlign", "transition"];
+let boxStyleProps = [
+  "borderColor",
+  "borderRadius",
+  "borderWidth",
+  "height",
+  "left",
+  "opacity",
+  "rotate",
+  "top",
+  "width",
+  "borderStyle",
+  "transition",
+];
 
 export function styleSplit(style) {
   let boxStyle = {};

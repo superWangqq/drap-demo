@@ -8,6 +8,7 @@ export const useCompnentsStore = defineStore(
       curComponentIds: [],
       snapShot: [], // 快照
       snapShotIndex: -1,
+      previewDialog: false,
       dialogVisible: false,
       dialogVisibleTitle: "",
       lastScale: 1,
@@ -101,6 +102,9 @@ export const useCompnentsStore = defineStore(
       },
       setCanvasStyle(style) {
         this.canvasStyleData = style;
+      },
+      setPreviewDialog(flag) {
+        this.previewDialog = flag;
       },
     },
   },

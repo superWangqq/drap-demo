@@ -1,6 +1,8 @@
 <template>
   <div class="attr-list">
     <CommonAttr></CommonAttr>
+    <Request></Request>
+
     <div class="table_map">
       <el-table
         :data="component.propValue.data"
@@ -35,6 +37,7 @@
 import { deepCopy, findIndex } from "@/utils/utils";
 import { useCompnentsStore } from "@/store/componentStore.js";
 const compnentsStore = useCompnentsStore();
+import Request from "@/custom-component/common/Request.vue";
 
 import CommonAttr from "@/custom-component/common/CommonAttr.vue";
 const props = defineProps({

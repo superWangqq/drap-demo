@@ -15,16 +15,29 @@
 </template>
 
 <script setup>
-import { computed } from "vue";
+import { computed, onMounted } from "vue";
 import { styleSplit } from "@/utils/style.js";
+import getList from "@/utils/request.js";
+
 const props = defineProps({
   component: {
     type: Object,
     default: () => {},
   },
 });
+const component = computed(() => {
+  return props.component;
+});
+
+onMounted(async () => {
+  if (component.value.request && component.value.request.url) {
+    let result = await getList(component.value.request);
+    console.log(result);
+  }
+});
+
 const componentStyle = computed(() => {
-  return { ...styleSplit(props.component.style).componentStyle };
+  return { ...styleSplit(component.value.style).componentStyle };
 });
 </script>
 

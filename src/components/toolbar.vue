@@ -5,6 +5,7 @@
     <el-button type="primary" @click.stop="daoru">导入</el-button>
     <el-button type="primary" @click.stop="daochu">导出</el-button>
     <el-button type="primary" @click.stop="clear">清空</el-button>
+    <el-button type="primary" @click.stop="yulan">预览</el-button>
   </div>
 </template>
 <script setup>
@@ -26,6 +27,9 @@ const daochu = () => {
 };
 const clear = () => {
   compnentsStore.setComponentData(JSON.stringify([]));
+};
+const yulan = () => {
+  compnentsStore.setPreviewDialog(true);
 };
 </script>
 <style lang="scss">

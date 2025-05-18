@@ -17,6 +17,7 @@
         </el-form-item>
       </el-form>
     </el-collapse-item>
+    <Linkage></Linkage>
   </el-collapse>
 </template>
 
@@ -26,6 +27,7 @@ import { ref, computed } from "vue";
 import { useCompnentsStore } from "@/store/componentStore.js";
 const compnentsStore = useCompnentsStore();
 const activeName = ref("style");
+import Linkage from "@/custom-component/common/Linkage.vue";
 
 const styleKeys = computed(() => {
   const curComponentStyleKeys = Object.keys(curComponent.value.style);

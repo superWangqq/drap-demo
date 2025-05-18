@@ -1,6 +1,6 @@
 <template>
   <!-- 图表容器：设置宽度和高度 -->
-  <div ref="chartRef" style="width: 100%; height: 100%"></div>
+  <div ref="chartRef" :style="{ width: component.style.width + 'px', height: component.style.height + 'px' }"></div>
 </template>
 
 <script setup>
